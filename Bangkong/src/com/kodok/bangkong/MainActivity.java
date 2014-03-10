@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item){
-		if(item.getItemId()==R.id.action_settings){
+		if(item.getItemId()==R.id.action_refresh){
 			view.reload();
 			return true;
 		}
