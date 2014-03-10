@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Cipta Group</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Refresh</string>
     <string name="hello_world">Hello world!</string>
 
 </resources>
