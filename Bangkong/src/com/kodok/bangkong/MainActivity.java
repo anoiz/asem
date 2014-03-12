@@ -1,11 +1,15 @@
 package com.kodok.bangkong;
 
 import android.app.Activity;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -15,12 +19,21 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		ConnectivityManager cn = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo ni = cn.getActiveNetworkInfo();
 		setTitle("Cipta Group");
 		view =(WebView)findViewById(R.id.wview);
 		WebSettings setting = view.getSettings();
 		setting.setJavaScriptEnabled(true);
-		view.loadUrl("http://www.cargobatam.com/index.php");
-		view.setWebViewClient(new WebviewClients());
+		if(ni != null && ni.isConnected()==true){
+			view.loadUrl("http://www.cargobatam.com/index.php");
+			view.setWebViewClient(new WebviewClients());
+		}else{
+			TextView txt = new TextView(this);
+			txt.setText("Tidak ada koneksi internet");
+			setContentView(txt);
+		}
+		
 	}
 
 	@Override
