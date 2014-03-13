@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
 					// TODO Auto-generated method stub
 					super.onPageStarted(view, url, favicon);
 					pd.setMessage("lading the file... be patient");
-					pd.setCancelable(false);
+					pd.setCancelable(true);
 					pd.show();
 					
 				}
@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
 				public boolean shouldOverrideUrlLoading(WebView view, String url) {
 					// TODO Auto-generated method stub
 					pd.setMessage("lading the file... be patient");
-					pd.setCancelable(false);
+					pd.setCancelable(true);
 					pd.show();
 					view.loadUrl("http://www.cargobatam.com/index.php");
 					return true;
