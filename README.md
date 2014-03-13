@@ -1,4 +1,0 @@
-asem
-====
-
-apa aja deh
