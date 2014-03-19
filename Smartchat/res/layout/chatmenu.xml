@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eaebed" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:background="#bb000000">
+        
+        <!-- style="@android:style/Widget.Button" -->
+
+        <Button style="@android:style/Widget.Button.Small"
+            android:id="@+id/chat_btn"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="> menu" />
+
+    </RelativeLayout>
+    <!-- bro disini nih nanti diisi apa ya jok baiknya
+    jika error terjadi hal ini karena library ,pilih app alt+enter 
+    kemudian cari android terus liat library error apa kagak-->
+
+</RelativeLayout>
