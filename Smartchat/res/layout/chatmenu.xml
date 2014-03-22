@@ -7,6 +7,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
+        android:id="@+id/firstid"
         android:layout_height="45dip"
         android:paddingLeft="2dip"
         android:paddingRight="2dip"
@@ -23,8 +24,34 @@
             android:text="> menu" />
 
     </RelativeLayout>
-    <!-- bro disini nih nanti diisi apa ya jok baiknya
+    <!-- bro disini nih nanti diisi apa ya baiknya
     jika error terjadi hal ini karena library ,pilih app alt+enter 
     kemudian cari android terus liat library error apa kagak-->
+    <RelativeLayout 
+        android:id="@+id/secondrel"
+        android:layout_below="@+id/firstid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText 
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"/>
+        <Button 
+            android:id="@+id/post"
+            android:layout_alignRight="@+id/et"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/et"
+            android:text="Post"
+            style="@android:style/Widget.Button.Small"
+            android:layout_height="wrap_content"/>
+        <ListView 
+            android:layout_below="@+id/post"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        
+    </RelativeLayout>
 
 </RelativeLayout>

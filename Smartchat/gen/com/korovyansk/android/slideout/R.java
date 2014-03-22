@@ -11,8 +11,8 @@ public final class R {
 		public static final int ic_launcher = 0x7f020000;
 	}
 	public static final class id {
-		public static final int slidedout_cover = 0x7f080003;
-		public static final int slideout_placeholder = 0x7f080002;
+		public static final int slidedout_cover = 0x7f080008;
+		public static final int slideout_placeholder = 0x7f080007;
 	}
 	public static final class layout {
 		public static final int slideout = 0x7f030001;
